@@ -46,4 +46,27 @@ func main() {
     delete(m, "k2")
     _, pair := m["k2"]
     fmt.Println(pair)
+
+    sum_any(1, 2, 3, 4)
 }
+
+func plus(a int, b int) int {
+    return a + b
+}
+
+func sum_any(nums ...int) {
+    total := 0
+    for _, num := range nums {
+        total += num
+    }
+    fmt.Println(total)
+}
+
+func zeroval(ival int) {
+    ival = 0
+}
+func zeroptr(iptr *int) {
+    *iptr = 0
+}
+
+
